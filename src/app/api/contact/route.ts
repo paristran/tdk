@@ -22,7 +22,7 @@ export async function POST(request: Request) {
       );
     }
 
-    await resend.emails.send({
+    const { data, error } = await resend.emails.send({
       from: process.env.EMAIL_FROM || "TDK Website <onboarding@resend.dev>",
       to: "admin@tdk-company.com",
       replyTo: email,
@@ -50,7 +50,15 @@ export async function POST(request: Request) {
       `,
     });
 
-    return NextResponse.json({ success: true });
+    if (error) {
+      console.error("Resend error:", error);
+      return NextResponse.json(
+        { error: "Failed to send message. Please try again." },
+        { status: 500 }
+      );
+    }
+
+    return NextResponse.json({ success: true, id: data?.id });
   } catch (error) {
     console.error("Contact form error:", error);
     return NextResponse.json(
