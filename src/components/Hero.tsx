@@ -21,14 +21,14 @@ export default function Hero() {
             transition={{ delay: 0.2, duration: 0.6 }}
             className="text-sm uppercase tracking-[0.3em] text-muted mb-6"
           >
-            Software Development Studio
+            AI-Powered Software Studio
           </motion.p>
 
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold tracking-tight leading-[1.05]">
-            We build software
+            We build intelligent
             <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-foreground via-foreground to-muted">
-              that scales.
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent via-accent-light to-foreground">
+              software.
             </span>
           </h1>
 
@@ -38,9 +38,9 @@ export default function Hero() {
             transition={{ delay: 0.4, duration: 0.6 }}
             className="mt-6 text-lg md:text-xl text-muted max-w-2xl mx-auto leading-relaxed"
           >
-            From concept to launch, we craft premium digital experiences that
-            drive business growth. Clean architecture. Beautiful interfaces.
-            Reliable results.
+            We design and ship AI-native products — from intelligent chatbots
+            and tutoring platforms to full-scale SaaS applications powered by
+            the latest in machine learning and generative AI.
           </motion.p>
 
           <motion.div

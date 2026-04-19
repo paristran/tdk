@@ -15,16 +15,20 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://tdk-company.com"),
-  title: "TDK Company | Premium Software Development",
+  title: "TDK Company | AI-Powered Software Development",
   description:
-    "TDK Company builds scalable, business-focused software solutions. Custom development, website redesign, booking systems, and payment integration.",
+    "TDK Company designs and ships AI-native products — intelligent chatbots, AI tutoring platforms, and full-stack SaaS applications powered by the latest in generative AI and machine learning.",
   keywords: [
-    "software development",
+    "AI development",
+    "AI chatbot",
+    "AI tutor",
+    "generative AI",
+    "LLM integration",
     "custom software",
-    "website redesign",
-    "booking systems",
-    "payment integration",
-    "web development",
+    "SaaS development",
+    "machine learning",
+    "AI-powered applications",
+    "software development",
   ],
   authors: [{ name: "TDK Company" }],
   creator: "TDK Company",
@@ -33,18 +37,18 @@ export const metadata: Metadata = {
     canonical: "https://tdk-company.com",
   },
   openGraph: {
-    title: "TDK Company | Premium Software Development",
+    title: "TDK Company | AI-Powered Software Development",
     description:
-      "We build scalable, business-focused software solutions that drive growth.",
+      "We design and ship AI-native products — intelligent chatbots, tutoring platforms, and full-stack SaaS applications.",
     url: "https://tdk-company.com",
     siteName: "TDK Company",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "TDK Company | Premium Software Development",
+    title: "TDK Company | AI-Powered Software Development",
     description:
-      "TDK Company builds scalable, business-focused software solutions. Custom development, website redesign, booking systems, and payment integration.",
+      "TDK Company designs and ships AI-native products — intelligent chatbots, AI tutoring platforms, and full-stack SaaS applications.",
   },
   robots: {
     index: true,

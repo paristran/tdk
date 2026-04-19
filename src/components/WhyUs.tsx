@@ -5,19 +5,24 @@ import { useRef } from "react";
 
 const reasons = [
   {
-    title: "Scalable Architecture",
+    title: "AI-First Engineering",
     description:
-      "We design systems that grow with your business. From MVP to enterprise scale, our architecture decisions are made for the long term.",
+      "We don't bolt AI onto legacy software — we build AI-native. Our team works with large language models, retrieval-augmented generation, and intelligent agents to create products that think, learn, and adapt.",
   },
   {
-    title: "Clean Code Standards",
+    title: "Production-Grade AI",
     description:
-      "Maintainable, well-tested code that your team can confidently build upon. We follow industry best practices and modern development patterns.",
+      "We've shipped real AI products used by thousands — from intelligent tutoring engines to contract analysis platforms. We know what it takes to move from a demo to a reliable, scalable system.",
+  },
+  {
+    title: "Modern Toolchain",
+    description:
+      "We leverage the same cutting-edge tools used by the best teams in the world — Claude, Cursor, Codex, and the latest in AI-assisted development — to ship faster without sacrificing quality.",
   },
   {
     title: "Business-First Thinking",
     description:
-      "Every technical decision is grounded in business value. We understand that great software exists to solve real problems and drive measurable outcomes.",
+      "Every technical decision is grounded in real business value. We understand that great AI exists to solve real problems, reduce costs, and drive measurable outcomes for your business.",
   },
 ];
 
@@ -72,13 +77,13 @@ export default function WhyUs() {
               Why TDK
             </p>
             <h2 className="text-3xl md:text-5xl font-semibold tracking-tight leading-tight mb-6">
-              Built different.
+              We ship AI products.
               <br />
-              Built to last.
+              Not AI demos.
             </h2>
             <p className="text-lg text-muted leading-relaxed">
-              We don&apos;t just write code. We engineer solutions that become
-              the foundation your business runs on. Quality is non-negotiable.
+              Everyone is talking about AI. We&apos;re the team actually shipping it.
+              Real products. Real users. Real revenue.
             </p>
           </motion.div>
 
