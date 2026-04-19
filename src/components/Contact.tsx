@@ -83,10 +83,7 @@ export default function Contact() {
               24 hours.
             </p>
             <div className="space-y-4 text-sm text-muted">
-              <a
-                href="mailto:admin@tdk-company.com"
-                className="flex items-center gap-3 hover:text-foreground transition-colors"
-              >
+              <div className="flex items-center gap-3">
                 <svg
                   className="w-4 h-4"
                   viewBox="0 0 24 24"
@@ -99,8 +96,8 @@ export default function Contact() {
                   <rect x="2" y="4" width="20" height="16" rx="2" />
                   <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                 </svg>
-                admin@tdk-company.com
-              </a>
+                We typically respond within 24 hours
+              </div>
             </div>
           </motion.div>
 

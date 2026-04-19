@@ -2,8 +2,18 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import type { ComponentType } from "react";
+import CitizenshipIllustration from "./illustrations/CitizenshipIllustration";
+import ContractLensIllustration from "./illustrations/ContractLensIllustration";
 
-const projects = [
+const projects: {
+  title: string;
+  description: string;
+  problem: string;
+  features: string[];
+  tags: string[];
+  illustration: ComponentType;
+}[] = [
   {
     title: "Get Citizenship Australia",
     description:
@@ -17,6 +27,7 @@ const projects = [
       "Subscription-based access model",
     ],
     tags: ["Web App", "Education", "SaaS"],
+    illustration: CitizenshipIllustration,
   },
   {
     title: "Contract Lens",
@@ -31,6 +42,7 @@ const projects = [
       "Secure document management",
     ],
     tags: ["AI/ML", "Legal Tech", "SaaS"],
+    illustration: ContractLensIllustration,
   },
 ];
 
@@ -38,7 +50,7 @@ function ProjectCard({
   project,
   index,
 }: {
-  project: (typeof projects)[0];
+  project: (typeof projects)[number];
   index: number;
 }) {
   const ref = useRef(null);
@@ -58,10 +70,13 @@ function ProjectCard({
     >
       <div className="relative bg-card-bg border border-card-border rounded-2xl overflow-hidden hover:border-white/10 transition-all duration-500">
         {/* Project visual header */}
-        <div className="h-48 lg:h-64 bg-gradient-to-br from-accent/10 via-accent/5 to-transparent flex items-center justify-center">
-          <span className="text-5xl font-bold text-white/5 select-none">
+        <div className="relative h-48 lg:h-64 bg-gradient-to-br from-accent/10 via-accent/5 to-transparent flex items-center justify-center overflow-hidden">
+          <span className="absolute text-5xl font-bold text-white/[0.03] select-none">
             {String(index + 1).padStart(2, "0")}
           </span>
+          <div className="relative w-full h-full flex items-center justify-center p-6">
+            <project.illustration />
+          </div>
         </div>
 
         <div className="p-8 lg:p-10">

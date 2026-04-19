@@ -45,8 +45,8 @@ export default function Navigation() {
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
-            <a href="#" className="text-xl font-semibold tracking-tight">
-              TDK<span className="text-accent">.</span>
+            <a href="#">
+              <img src="/logo.svg" alt="TDK Company" className="h-7 lg:h-8 w-auto" />
             </a>
 
             {/* Desktop Nav */}
