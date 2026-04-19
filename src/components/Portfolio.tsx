@@ -13,6 +13,7 @@ const projects: {
   features: string[];
   tags: string[];
   illustration: ComponentType;
+  href: string;
 }[] = [
   {
     title: "Get Citizenship Australia",
@@ -28,6 +29,7 @@ const projects: {
     ],
     tags: ["Web App", "Education", "SaaS"],
     illustration: CitizenshipIllustration,
+    href: "https://www.getcitizenship.com.au/",
   },
   {
     title: "Contract Lens",
@@ -43,6 +45,7 @@ const projects: {
     ],
     tags: ["AI/ML", "Legal Tech", "SaaS"],
     illustration: ContractLensIllustration,
+    href: "https://contractlens.au/",
   },
 ];
 
@@ -136,6 +139,29 @@ function ProjectCard({
               ))}
             </ul>
           </div>
+
+          {/* Link to live project */}
+          <a
+            href={project.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 mt-6 text-sm font-medium text-accent hover:text-accent-light transition-colors"
+          >
+            View Project
+            <svg
+              className="w-4 h-4"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+              <polyline points="15 3 21 3 21 9" />
+              <line x1="10" y1="14" x2="21" y2="3" />
+            </svg>
+          </a>
         </div>
       </div>
     </motion.div>
